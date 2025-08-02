@@ -10,7 +10,7 @@ void main() {
       routes: {
         '/': (context) => Home(),
         '/details': (context) => Details(),
-        '/carList': (context) => CarListPage(),
+        '/carList': (context) => CarListPage(), //named routes
       },
     ),
   );

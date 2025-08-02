@@ -13,13 +13,16 @@ class CarDetailPage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text('Marque: ${car.marque}', style: TextStyle(fontSize: 20)),
+            Text(
+              'Marque: ${car.marque}',
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+            ),
             SizedBox(height: 8),
             Text('Modèle: ${car.model}', style: TextStyle(fontSize: 20)),
             SizedBox(height: 8),
             Text(
               'Prix: \$${car.prix.toStringAsFixed(2)}',
-              style: TextStyle(fontSize: 20),
+              style: TextStyle(fontSize: 20, color: Colors.green.shade100),
             ),
           ],
         ),
